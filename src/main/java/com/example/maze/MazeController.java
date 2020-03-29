@@ -45,7 +45,7 @@ public class MazeController
         return mazeService.findAll();
     }
     
-    @GetMapping("/pages")
+    @GetMapping(params = {"page", "size"})
     public Page<Maze> getMazes(@RequestParam("page") int page, @RequestParam("size") int size)
     {
         return mazeService.findPaginated(page, size);
