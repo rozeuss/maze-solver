@@ -21,6 +21,16 @@ Input file consists of:
 
 Output is integer, e.g. for example above `4`.
 
+## Build
+
+Run `gradle clean build` to build the project.
+
+## Running the application
+
+Run `gradle bootRun` to execute run the application.
+
+### API endpoints
+
 Upload a maze:
 ```
 curl --location --request POST 'http://localhost:8080/mazes' --form 'file=@/C:/Users/X/Desktop/input.txt'
