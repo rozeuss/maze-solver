@@ -41,5 +41,5 @@ curl --location --request GET 'http://localhost:8080/mazes'
 ```
 Return paginated mazes:
 ```
-curl --location --request GET 'http://localhost:8080/mazes/pages?page=1&size=10'
+curl --location --request GET 'http://localhost:8080/mazes?page=1&size=10'
 ```
